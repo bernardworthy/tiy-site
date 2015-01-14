@@ -1,0 +1,554 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.main {
+  width: 1440px;
+  height: 3956px;
+  background-image: url(http://academy.smashingboxes.com/assets/timeline_bg-c6df24fc8cdea898ad4491ad758fdbe7.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.default-navbar {
+  background-color: #ae1f58;
+  border-color: #921a4a;
+  width: 1440px;
+  height: 99px;
+  position: fixed;
+  z-index: 100;
+}
+
+.logo{
+  margin-left: 150px;
+  padding-top: .8em;
+  float:left;
+  display: inline-block;
+}
+
+.menu {
+  float: right;
+  margin-right: 150px;
+  padding-top: 1.55em;
+}
+
+.menu ul {
+  list-style:none;
+}
+
+.menu li {
+  float: left;
+  padding-right: 3em;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.apply {
+  padding: 10% 1% 8%;
+  background-color: #eb1767;
+  height: 565px;
+}
+
+.apply h1 {
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 1.314;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 3%;
+}
+
+.info {
+  width: 50%;
+}
+
+.info p {
+  width: 97%;
+  letter-spacing: .045em;
+  color: white;
+  font-size: 1.25em;
+  padding-bottom: 2em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.apply-logos img {
+  padding-top: 1.45em;
+  margin-left: 10.4em;
+  margin-bottom: 4em;
+}
+
+.apply-button-section {
+  padding-top: 15px;
+  height: 100px;
+  background-color: #eb1767;
+  text-align: center;
+}
+
+.apply-btn {
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #ae1f58;
+  border-color: #921a4a;
+  width: 80px;
+  height: 50px;
+  border: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: .045em;
+}
+
+.apply-btn h3{
+  font-size: 1.1em;
+}
+
+.what-section {
+  padding: 8.2% 1% 8%;
+  height: 475px;
+}
+
+.what-section h1 {
+  /* margin-top: 4em; */
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 1.314;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 4%;
+}
+
+.what-info p {
+  width: 97%;
+  letter-spacing: .045em;
+  color: white;
+  font-size: 1.25em;
+  padding-bottom: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.process {
+  padding-top: 15px;
+  height: 215px;
+  background-color: #292627;
+  width: 1150px;
+  padding-left: 290px;
+  overflow: hidden;
+}
+
+/* .process:hover {
+  padding-top: 15px;
+  height: 231px;
+  background-color: #fff;
+  width: 100%;
+} */
+
+/* .process-content {
+  width: 813px;
+  height: 180px;
+  background-image: url(http://academy.smashingboxes.com/assets/smashing_academy-timeline-a5cd562e42b9c93b2e8406a9eee1fd43.png);
+  text-align: center;
+  z-index: -1;
+}
+
+.process-content:hover {
+  width: 813px;
+  height: 180px;
+  background-color: transparent;
+  text-align: center;
+  z-index: -1;
+} */
+
+/* .process-content:hover {
+  width: 813px;
+  height: 200px;
+  background-color: #eb1767;
+  text-align: center;
+  transition: .5s;
+  position: absolute;
+} */
+
+.process-moving {
+  margin-top: 0px;
+  height: 130px;
+  background-color: #eb1767;
+  width: 0%;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+
+.process-moving:hover {
+  margin-top: 0px;
+  height: 130px;
+  background-color: #eb1767;
+  width: 70%;
+  transition: width 0.3s;
+}
+
+.process-photo {
+  width: 813px;
+  height: 200px;
+  background-image: url(http://academy.smashingboxes.com/assets/smashing_academy-timeline-a5cd562e42b9c93b2e8406a9eee1fd43.png);
+  background-color: transparent;
+
+/*   display: inline-block;
+  margin-top:-190px; */
+}
+
+.process-bkg {
+  width: 813px;
+  height: 180px;
+  background-color: #fff;
+  margin-top: -120px;
+  z-index:-1;
+}
+
+.about-section {
+  padding: 2.75% 1% 8%;
+  height: 230px;
+  background-color: white;
+  color: #626366;
+}
+
+.about-section h1 {
+  /* margin-top: 4em; */
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 1.314;
+  text-transform: uppercase;
+  margin-bottom: 4%;
+}
+
+.about-section hr {
+  margin-top: -20px;
+  width: 80%;
+  color: #999999;
+}
+
+.about-info p {
+  width: 97%;
+  letter-spacing: .045em;
+  color: #626366;
+  font-size: 1.25em;
+  padding-bottom: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.about-info strong {
+  color: #eb1767;
+}
+
+.mentors-section {
+  padding: 2.75% 1% 8%;
+  height: 200px;
+  background-color: white;
+  color: #626366;
+}
+
+.mentors-section h2 {
+  /* margin-top: 4em; */
+  font-weight: 600;
+  letter-spacing: .05em;
+  font-size: 1.65em;
+  line-height: 1.314;
+  text-transform: uppercase;
+  margin-bottom: 4%;
+}
+
+.mentors-info p {
+  width: 97%;
+  letter-spacing: .045em;
+  color: #626366;
+  font-size: 1.25em;
+  padding-bottom: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.profile-pics ul {
+  width: 760px;
+}
+
+.profile-pics ul li {
+  list-style:none;
+  display: inline-block;
+  padding: 0 20px;
+  max-width: 115px;
+  text-align: center;
+  float: left;
+}
+
+.profile-pics ul li h3 {
+  margin-bottom: -18px;
+  color: #eb1767;
+  font-weight: 400;
+  letter-spacing: .045em;
+}
+
+.profile-pics ul li h6 {
+  letter-spacing: .045em;
+}
+
+.profile-pics ul li a:link {
+  text-decoration: none;
+}
+
+.profile-pics img {
+  width: 110px;
+}
+
+.contact-section {
+  padding: .05% 1% 8%;
+  height: 50px;
+  background-color: white;
+  color: #626366;
+}
+.contact-info p {
+  width: 97%;
+  letter-spacing: .05em;
+  color: #626366;
+  font-size: 1.25em;
+  padding-bottom: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.contact-info strong {
+  color: #eb1767;
+}
+
+.apply-section {
+  padding: 4.75% 1% 8% 8%;
+  height: 415px;
+  background-color: #f4f4f4;
+  color: #626366;
+}
+
+.apply-section h1 {
+  /* margin-top: 4em; */
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 1.314;
+  text-transform: uppercase;
+  margin-bottom: 4%;
+}
+
+.apply-section hr {
+  margin-top: 2em;
+  width: 80%;
+  color: #999999;
+}
+
+.apply-info p {
+  width: 97%;
+  letter-spacing: .05em;
+  color: #626366;
+  font-size: 1.25em;
+  padding-bottom: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.apply-info strong {
+  color: #eb1767;
+}
+
+.dates-section table, td, th {
+  border:1px none green;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+.dates {
+  margin-top: 45px;
+  width: 650px;
+  background-color: #999999;
+  font-size: 10px;
+  font-weight: 600;
+  vertical-align: middle;
+  border-radius: 5px;
+  /* white-space: nowrap; */
+}
+
+.dates thead {
+  color: white;
+}
+
+.dates th {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.dates tbody td {
+  background-color: #f4f4f4;
+  font-size: 15px;
+  font-weight: 400;
+  height: 35px;
+  padding-left: 20px;
+}
+
+.dates tbody td a:link{
+  text-decoration: none;
+  color: #eb1767;
+}
+
+/* .front-end {
+  background-color: #f4f4f4;
+}
+
+.front-end: hover {
+  color: white;
+  background-color: #AE1F58;
+}
+
+.ruby {
+
+}
+
+.python {
+
+} */
+
+.apply-btn-small {
+  color: white;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: #ae1f58;
+  border-color: #921a4a;
+  width: 70px;
+  height: 33px;
+  border: none;
+  font-size: .8em;
+  font-weight: bold;
+  letter-spacing: .045em;
+}
+
+.contact-us-section {
+  margin-top: -20px;
+  width: 1440px;
+  height: 575px;
+  background-image: url(http://academy.smashingboxes.com/assets/smashing_academy_map-af7e66d0b42cb911ae927a7e6e4ed9d1.png );
+  background-size:cover;
+}
+
+.contact-details {
+  height: 575px;
+  float: right;
+  width: 50%;
+  background-color: rgba(215, 0, 90, .75);
+  color: white;
+}
+
+.contact-details h1 {
+  padding-left: 120px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-size: 2.4em;
+}
+
+.call-to-action {
+  padding-top: 15px;
+  font-size: .78em;
+  width: 435px;
+  letter-spacing: .045em;
+  line-height: 1.55em;
+}
+
+.contact-details ul {
+  list-style: none;
+  padding-left: 120px;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.icon-address {
+  float: left;
+  padding-right: 18px;
+  padding-bottom: 30px;
+}
+
+.icon {
+  float: left;
+  padding-right: 18px;
+  padding-bottom: 0px;
+}
+
+.home-footer {
+  /* margin-top: -14px; */
+  width: 1440px;
+  height: 115px;
+  background-color: #292627;
+  padding-top: 20px;
+}
+
+.home-footer-logo-text {
+  color: #535152;
+  text-transform: uppercase;
+  line-height: .6em;
+}
+
+.footer-logos {
+  width: 400px;
+  padding-left: 150px;
+}
+
+.footer-logos li {
+  display: inline-block;
+  list-style-type: none;
+  float: left;
+  position: relative;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+
+.newsletter {
+  width: 300px;
+}
+
+.newsletter span {
+  font-size: .95em;
+  color: #535152;
+  padding-left: 70px;
+}
+
+.form {
+  margin-top: 10px;
+  width: 200px;
+  background-color: white;
+  height: 30px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-btn{
+  position: absolute;
+  margin-top: 10px;
+}
+
+.social {
+  width: 200px;
+  list-style: none;
+  float: right;
+  margin-top: -40px;
+  margin-right: 120px;
+}
+
+.social li{
+  display: inline;
+  padding-right: 15px;
+}
